@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:context="friday.project.notifier.DetailActivity"
+	tools:showIn="@layout/activity_detail">
+
+	<RelativeLayout
+		android:id="@+id/detail_rel_head"
+		android:layout_width="match_parent"
+		android:layout_height="100sp"
+
+		android:background="@color/bootstrap_brand_danger">
+
+		<TextView
+			android:id="@+id/detail_head"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingTop="25sp"
+			android:text="SUBJECT"
+			android:textAlignment="center"
+			android:textColor="#ffffff"
+			android:textSize="20sp"/>
+
+		<TextView
+			android:id="@+id/detail_date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentEnd="true"
+			android:text="DA-TE-DATE"
+			android:textColor="@color/bootstrap_gray_lightest"
+			android:textSize="20sp"/>
+	</RelativeLayout>
+	<ScrollView
+		android:layout_width="match_parent"
+		android:id="@+id/detail_rel_text"
+		android:background="@color/bootstrap_brand_danger_dark"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/detail_rel_head"
+		android:layout_alignParentBottom="true">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="@string/placeholder_text"
+			android:textColor="@color/bootstrap_gray_lighter"
+			android:textSize="18sp"
+			android:id="@+id/detail_text"
+			android:padding="15sp"/>
+	</ScrollView>
+</RelativeLayout>

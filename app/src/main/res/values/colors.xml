@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#263238</color>
+	<color name="colorPrimaryDark">#21272b</color>
+	<color name="colorAccent">#55595c</color>
+	<color name="windowBackground">#373a3c</color>
+	<color name="item_back_nav">#00ffffff</color>
+	<color name="item_icon_tint_nav">#969696</color>
+	<color name="item_text_color_nav">#939393</color>
+	<color name="one">#ff0000</color>
+	<color name="two">#00ff00</color>
+	<color name="three">#0000ff</color>
+	<color name="orange_dark">#E64A19</color>
+	<color name="blue_dark">#00537F</color>
+	<color name="black">#000000</color>
+	<color name="yellow">#F5A623</color>
+	<color name="transparent">#00000000</color>
+	<color name="transparent_black">#39000000</color>
+	<color name="bootstrap_brand_success_dark">#366936</color>
+	<color name="bootstrap_brand_danger_dark">#973a37</color>
+
+</resources>

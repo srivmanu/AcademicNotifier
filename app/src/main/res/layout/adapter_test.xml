@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="75sp"
+	android:background="@color/windowBackground"
+	android:padding="2sp">
+
+	<TextView
+		android:id="@+id/adapter_test_sub"
+		android:layout_width="match_parent"
+		android:layout_height="50sp"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:paddingLeft="10sp"
+		android:paddingTop="5sp"
+		android:text="SUB"
+		android:textColor="@color/bootstrap_gray_lighter"
+		android:textSize="25sp"/>
+
+
+	<TextView
+		android:id="@+id/adapter_test_date"
+		android:layout_width="wrap_content"
+		android:layout_height="25sp"
+		android:text="DATE"
+		android:textColor="@color/bootstrap_brand_success"
+		android:textSize="18sp"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentEnd="true"/>
+</RelativeLayout>

@@ -1,0 +1,344 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="layout.NotifHome">
+
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	                xmlns:tools="http://schemas.android.com/tools"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                tools:context="com.myapplication.MainActivityFragment">
+
+		<LinearLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			xmlns:card_view="http://schemas.android.com/apk/res-auto"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/windowBackground"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingTop="5sp"
+				android:text="DAY"
+				android:textAlignment="center"
+				android:textColor="@color/bootstrap_gray_lightest"
+				android:textSize="20sp"
+				android:id="@+id/notif_home_day"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="4sp"
+				android:weightSum="2">
+
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:orientation="vertical"
+					android:weightSum="2">
+
+					<android.support.v7.widget.CardView
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_margin="2sp"
+						android:layout_weight="1"
+						android:elevation="5sp"
+						card_view:cardCornerRadius="2dp">
+
+						<RelativeLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:foreground="?android:attr/selectableItemBackground"
+							android:clickable="true"
+							android:background="@color/bootstrap_brand_success_dark">
+
+							<com.beardedhen.androidbootstrap.AwesomeTextView
+								android:id="@+id/home_no_notif"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_centerHorizontal="true"
+								android:layout_centerVertical="true"
+								android:textSize="50sp"
+								app:bootstrapText="{fa_edit}"
+								app:bootstrapBrand="warning"
+								android:visibility="gone"
+								/>
+
+							<TextView
+								android:visibility="gone"
+								android:id="@+id/home_no_notif_text"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_below="@id/home_no_notif"
+								android:layout_centerHorizontal="true"
+								android:layout_marginTop="10sp"
+								android:text="No new events"/>
+							<TextView
+								android:id="@+id/textView1"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_alignParentTop="true"
+								android:layout_centerHorizontal="true"
+								android:padding="5sp"
+								android:text="Notifications"/>
+
+							<ListView
+								android:id="@+id/list_notif_home"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:clickable="false"
+								android:contextClickable="false"
+								android:layout_below="@+id/textView1"
+								android:layout_centerHorizontal="true"
+								android:layout_centerInParent="true"
+								android:choiceMode="none"/>
+						</RelativeLayout>
+					</android.support.v7.widget.CardView>
+
+					<android.support.v7.widget.CardView
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:layout_margin="2sp"
+						android:layout_weight="1"
+						android:elevation="5sp"
+						card_view:cardCornerRadius="2dp">
+
+						<RelativeLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:foreground="?android:attr/selectableItemBackground"
+							android:clickable="true"
+							android:background="@color/bootstrap_brand_danger_dark">
+
+							<TextView
+								android:id="@+id/textView2"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_alignParentTop="true"
+								android:layout_centerHorizontal="true"
+								android:padding="5sp"
+								android:text="Today's Events"/>
+
+							<ListView
+							android:id="@+id/list_event_home"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_below="@+id/textView2"
+							android:layout_centerHorizontal="true"
+							android:layout_centerInParent="true"
+							android:choiceMode="none"/>
+							<com.beardedhen.androidbootstrap.AwesomeTextView
+								android:id="@+id/home_no_event"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_centerHorizontal="true"
+								android:layout_centerVertical="true"
+
+								android:textSize="50sp"
+								app:bootstrapText="{fa_edit}"
+							    app:bootstrapBrand="warning"
+							    android:visibility="gone"
+								/>
+
+							<TextView
+								android:visibility="gone"
+								android:id="@+id/home_no_event_text"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_below="@id/home_no_event"
+								android:layout_centerHorizontal="true"
+								android:layout_marginTop="10sp"
+								android:text="No new events"/>
+						</RelativeLayout>
+					</android.support.v7.widget.CardView>
+				</LinearLayout>
+
+				<android.support.v7.widget.CardView
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_margin="2sp"
+					android:clickable="true"
+					android:layout_weight="1">
+
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="#222222">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:orientation="vertical"
+							android:paddingLeft="5sp"
+							android:clickable="true"
+							android:foreground="?android:attr/selectableItemBackground"
+							android:weightSum="9">
+
+							<TextView
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_alignParentTop="true"
+								android:padding="5sp"
+								android:text="Time Table"
+								android:textAlignment="center"
+								android:clickable="true"
+								android:foreground="?android:attr/selectableItemBackground"
+								android:textColor="@color/bootstrap_gray"
+								/>
+
+							<com.beardedhen.androidbootstrap.AwesomeTextView
+								android:id="@+id/home_tt_one"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_margin="1sp"
+								android:layout_weight="1"
+								android:clickable="true"
+								android:foreground="?android:attr/selectableItemBackground"
+								android:padding="10sp"
+								android:textAlignment="center"
+								android:textSize="16sp"
+								app:bootstrapBrand="success"
+								app:bootstrapText="ONE"
+								app:roundedCorners="true"/>
+
+							<com.beardedhen.androidbootstrap.AwesomeTextView
+								android:id="@+id/home_tt_two"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_margin="1sp"
+								android:clickable="true"
+								android:foreground="?android:attr/selectableItemBackground"
+								android:layout_weight="1"
+								android:padding="10sp"
+								android:textAlignment="center"
+								android:textSize="16sp"
+								app:bootstrapBrand="success"
+								app:bootstrapText="TWO"
+								app:roundedCorners="true"/>
+
+							<com.beardedhen.androidbootstrap.AwesomeTextView
+								android:id="@+id/home_tt_three"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:clickable="true"
+								android:foreground="?android:attr/selectableItemBackground"
+								android:layout_margin="1sp"
+								android:layout_weight="1"
+								android:padding="10sp"
+								android:textAlignment="center"
+								android:textSize="16sp"
+								app:bootstrapBrand="success"
+								app:bootstrapText="THREE"
+								app:roundedCorners="true"/>
+
+							<com.beardedhen.androidbootstrap.AwesomeTextView
+								android:id="@+id/home_tt_four"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:clickable="true"
+								android:foreground="?android:attr/selectableItemBackground"
+								android:layout_margin="1sp"
+								android:layout_weight="1"
+								android:padding="10sp"
+								android:textAlignment="center"
+								android:textSize="16sp"
+								app:bootstrapBrand="success"
+								app:bootstrapText="FOUR"
+								app:roundedCorners="true"/>
+
+							<com.beardedhen.androidbootstrap.AwesomeTextView
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_margin="1sp"
+								android:layout_weight="1"
+								android:clickable="true"
+								android:foreground="?android:attr/selectableItemBackground"
+								android:padding="10sp"
+								android:textAlignment="center"
+								android:textSize="16sp"
+								android:textStyle="italic"
+								app:bootstrapBrand="danger"
+								app:bootstrapText="RECESS"
+								app:roundedCorners="true"/>
+
+							<com.beardedhen.androidbootstrap.AwesomeTextView
+								android:id="@+id/home_tt_five"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_margin="1sp"
+								android:layout_weight="1"
+								android:padding="10sp"
+								android:textAlignment="center"
+								android:clickable="true"
+								android:foreground="?android:attr/selectableItemBackground"
+								android:textSize="16sp"
+								app:bootstrapBrand="success"
+								app:bootstrapText="FIVE"
+								app:roundedCorners="true"/>
+
+							<com.beardedhen.androidbootstrap.AwesomeTextView
+								android:id="@+id/home_tt_six"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_margin="1sp"
+								android:layout_weight="1"
+								android:clickable="true"
+								android:foreground="?android:attr/selectableItemBackground"
+								android:padding="10sp"
+								android:textAlignment="center"
+								android:textSize="16sp"
+								app:bootstrapBrand="success"
+								app:bootstrapText="SIX"
+								app:roundedCorners="true"
+								/>
+
+							<com.beardedhen.androidbootstrap.AwesomeTextView
+								android:id="@+id/home_tt_seven"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_margin="1sp"
+								android:layout_weight="1"
+								android:clickable="true"
+								android:foreground="?android:attr/selectableItemBackground"
+								android:padding="10sp"
+								android:textAlignment="center"
+								android:textSize="16sp"
+								app:bootstrapBrand="success"
+								app:bootstrapText="SEVEN"
+								app:roundedCorners="true"
+								/>
+
+							<com.beardedhen.androidbootstrap.AwesomeTextView
+								android:id="@+id/home_tt_eight"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_margin="1sp"
+								android:layout_weight="1"
+								android:padding="10sp"
+								android:clickable="true"
+								android:foreground="?android:attr/selectableItemBackground"
+								android:textAlignment="center"
+								android:textSize="16sp"
+								app:bootstrapBrand="success"
+								app:bootstrapText="EIGHT"
+								app:roundedCorners="true"
+								/>
+						</LinearLayout>
+					</RelativeLayout>
+
+				</android.support.v7.widget.CardView>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+
+</FrameLayout>

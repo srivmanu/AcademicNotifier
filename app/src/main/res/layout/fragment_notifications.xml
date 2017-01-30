@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/windowBackground"
+             tools:context="layout.NotifNotifications">
+
+	<ListView
+		android:id="@+id/notif_list"
+		android:layout_width="match_parent"
+		android:visibility="gone"
+		android:layout_height="match_parent"/>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="visible"
+		android:id="@+id/no_notif_notif">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:id="@+id/img_no_notif_notif"
+			android:layout_centerVertical="true"
+			android:src="@drawable/notification"
+			android:tint="@color/bootstrap_gray_light"
+			/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/text_no_notif"
+			android:textSize="21sp"
+			android:textStyle="bold"
+			android:id="@+id/text_no_notif_notif"
+			android:layout_marginTop="10sp"
+			android:textColor="@color/bootstrap_gray_light"
+			android:layout_below="@id/img_no_notif_notif"
+			android:layout_centerHorizontal="true"/>
+	</RelativeLayout>
+
+</FrameLayout>
