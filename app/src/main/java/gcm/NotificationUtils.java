@@ -14,7 +14,7 @@ import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
-import android.support.v7.app.NotificationCompat;
+import android.support.v4.app.NotificationCompat;
 import android.text.Html;
 import android.text.TextUtils;
 import android.util.Log;
@@ -50,7 +50,7 @@ public class NotificationUtils {
     }
 
     public void showNotificationMessage(String title, String message, Intent intent) {
-        Log.i("Akshay",title+message);
+        Log.i("Akshay", title + message);
         showNotificationMessage(title, message, intent, null);
     }
 
@@ -229,7 +229,7 @@ public class NotificationUtils {
             e.printStackTrace();
         }
         return 0;
-        }
-
     }
+
+}
 
